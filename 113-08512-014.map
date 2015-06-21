@@ -1,0 +1,1305 @@
+Archive member included because of file (symbol)
+
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              FuncGen.o (__divsf3)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                              FuncGen.o (__fixsfsi)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              FuncGen.o (__fixunssfsi)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              FuncGen.o (__floatunsisf)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_inf)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_nan)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscA)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscB)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o) (__fp_round)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_split3)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              FuncGen.o (__mulsf3)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              Board.o (__mulsi3)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              FuncGen.o (__udivmodhi4)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              Board.o (__udivmodsi4)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o (exit)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              Board.o (__do_copy_data)
+c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              Board.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+KScanBuf            0x2               Board.o
+KeyParam            0x1               Board.o
+InputBuf            0x10              FuncGen.o
+Keycnt              0x1               Board.o
+KTimeChk            0x1               Board.o
+KeyCode             0x1               Board.o
+enc_cnt             0x1               Board.o
+KeyCodeBuf          0x1               Board.o
+Keybuf              0x1               Board.o
+u0RxQueueTail       0x2               Comm.o
+KScan               0x2               Board.o
+Keybuf0             0x1               Board.o
+GTimer              0x2               Board.o
+Keycode             0x1               Board.o
+SysState            0x4               FuncGen.o
+Strbuf              0x14              Board.o
+NumString           0x8               FuncGen.o
+KHCount             0x1               Board.o
+NumInput            0xf               FuncGen.o
+Uart0RxBuf          0x12c             Comm.o
+miniDDS             0x3e              FuncGen.o
+KFlags              0x1               Board.o
+KCount              0x1               Board.o
+FrameBuf            0x12c             Comm.o
+CommStatus          0x1               Comm.o
+enc_state           0x1               Board.o
+CurrParam           0x1               FuncGen.o
+TrigCtrl            0x1               FuncGen.o
+PrevWiperPos        0x1               Board.o
+old_enc_cnt         0x1               Board.o
+CurrFocus           0x1               FuncGen.o
+RxCnt               0x2               Comm.o
+Flags               0x1               Board.o
+Txbuf               0x32              Comm.o
+u0RxQueueHead       0x2               Comm.o
+CurrMode            0x1               FuncGen.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+LOAD 113-08512-014.o
+LOAD Board.o
+LOAD Common.o
+LOAD FuncGen.o
+LOAD Diag.o
+LOAD Comm.o
+LOAD Zmon.o
+LOAD c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x3fc2
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000068       0x63 113-08512-014.o
+                0x000000b6                CRLF
+                0x00000068                Device
+                0x000000a5                Web
+                0x00000077                FWver
+                0x000000ba                Decor
+                0x00000087                DDSver
+                0x00000093                MfgID
+ .progmem.data  0x000000cb       0x74 Board.o
+                0x000000cb                KScanCodeTab
+                0x0000012f                enc_table
+ .progmem.data  0x0000013f      0x49e FuncGen.o
+                0x0000019b                KS_Sweep_Tab
+                0x000003b1                ModePrompt
+                0x0000044a                ServoPW
+                0x00000337                CmdIndex
+                0x00000351                InitFuncTab
+                0x000004c4                ServoParamNames
+                0x00000227                KS_ModeSel_Tab
+                0x00000389                Unit_Symbols
+                0x000003e5                ModeIndex
+                0x0000044e                ServoAmp
+                0x0000042f                TswTitle
+                0x000003bd                ModeNames
+                0x000002eb                KS_DiagEEPROM_Tab
+                0x0000027f                KS_DiagLCD_Tab
+                0x00000453                ServoRun
+                0x0000055d                ServoParamUnits
+                0x000004b3                ServoParamDefaultRestore
+                0x0000047c                SetFreqPeriodStep
+                0x0000059c                FocusLocTab
+                0x0000059f                miniDDS_ROM
+                0x000001d3                KS_ServoPos_Tab
+                0x00000530                ServoParamIndex
+                0x00000287                KS_DiagKey_Tab
+                0x0000031b                KS_ShowStep_Tab
+                0x000004a9                Duty
+                0x0000020b                KS_ServoParam_Tab
+                0x00000423                SweepParamUnit
+                0x00000359                WaveName
+                0x00000464                ServoRunState
+                0x0000013f                KS_CW_Tab
+                0x0000023b                KS_DigitInput_Tab
+                0x0000048b                FreqStep
+                0x000001fb                KS_ServoRun_Tab
+                0x0000032b                KS_ShowDuty_Tab
+                0x00000439                ServoPos
+                0x000003f9                SweepParams
+                0x000002f3                KS_DiagDDS_Tab
+                0x0000049a                TimeStep
+ .progmem.data  0x000005dd      0x125 Diag.o
+                0x0000061e                TestSignal
+                0x000005dd                DummyString1
+                0x000006f2                Web_coded
+                0x00000695                TestSignalParam
+                0x00000602                EepromCheck
+                0x000006e9                MfgID_coded
+                0x00000617                Failed
+                0x000005fd                DummyString3
+                0x000005ed                DummyString2
+                0x00000612                Good
+ .progmem.data  0x00000702       0x21 Comm.o
+                0x00000702                MfgID_coded1
+                0x00000713                Web_coded1
+                0x00000724                . = ALIGN (0x2)
+ *fill*         0x00000723        0x1 00
+                0x00000724                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000724        0x0 linker stubs
+ *(.trampolines*)
+                0x00000724                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000724                __ctors_start = .
+ *(.ctors)
+                0x00000724                __ctors_end = .
+                0x00000724                __dtors_start = .
+ *(.dtors)
+                0x00000724                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000724        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+                0x00000724                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000724        0xc c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000730       0x16 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000730                __do_copy_data
+ .init4         0x00000746       0x10 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000746                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000756        0x8 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+ *(.init9)
+ *(.text)
+ .text          0x0000075e        0x4 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+                0x0000075e                __vector_22
+                0x0000075e                __vector_1
+                0x0000075e                __vector_24
+                0x0000075e                __vector_12
+                0x0000075e                __bad_interrupt
+                0x0000075e                __vector_6
+                0x0000075e                __vector_3
+                0x0000075e                __vector_23
+                0x0000075e                __vector_25
+                0x0000075e                __vector_11
+                0x0000075e                __vector_13
+                0x0000075e                __vector_17
+                0x0000075e                __vector_19
+                0x0000075e                __vector_5
+                0x0000075e                __vector_4
+                0x0000075e                __vector_9
+                0x0000075e                __vector_2
+                0x0000075e                __vector_21
+                0x0000075e                __vector_15
+                0x0000075e                __vector_8
+                0x0000075e                __vector_14
+                0x0000075e                __vector_10
+                0x0000075e                __vector_16
+                0x0000075e                __vector_20
+ .text          0x00000762      0x20a 113-08512-014.o
+                0x00000762                main
+ .text          0x0000096c      0x56e Board.o
+                0x00000a16                uputs_ROM
+                0x00000b3a                KeyConvert
+                0x000009d2                u0putc
+                0x00000a74                Timer2_Init
+                0x00000b70                KeyScan
+                0x00000996                ExtIntr_Init
+                0x00000dfc                UpdateLCD
+                0x000009f0                u0rcheck
+                0x0000097c                Port_Init
+                0x00000a9e                __vector_7
+                0x00000d9c                LCD_WriteByte
+                0x00000afa                UpdateOfs
+                0x000009b6                Uart0_Init
+                0x00000ae2                ClrDispBuf
+                0x00000e5a                LCD_Init
+                0x00000d5a                SendBuf
+                0x00000a30                Comp_Init
+                0x000009e2                u0getc
+                0x0000096c                Misc_Init
+                0x00000cee                SetDigitalPot
+                0x00000a3c                ADC_Init
+                0x00000a56                VREF_Init
+                0x00000b18                EE_Read
+                0x000009fc                uputs
+                0x00000b26                EE_Write
+                0x00000a58                Timer0_Init
+ .text          0x00000eda      0x1dc Common.o
+                0x0000108e                Dly1ms
+                0x0000107e                Dly50us
+                0x00000f78                BinToDec32
+                0x0000109e                Dly_ms
+                0x00001046                DelayDisp
+                0x00001066                Dly_us
+                0x00000eda                FindDec
+                0x0000101e                Delay
+                0x00000f9e                BinToStr
+ .text          0x000010b6     0x231e FuncGen.o
+                0x00002974                ShowSweep
+                0x00003238                TYPE
+                0x000013d8                Digit
+                0x000027ea                IncInputHandle
+                0x00002ab0                ToggleSweepDir
+                0x0000236e                ShowAmp
+                0x000032de                StartStop
+                0x00001c36                ShowDuty
+                0x00001148                Dummy
+                0x00001700                SaveSetting
+                0x00001b38                SendDDS
+                0x00001cc6                DutyInputHandle
+                0x000018b8                SendServoRun
+                0x00002b18                SweepParamInputHandle
+                0x00001e1c                FreqInputHandle
+                0x0000270e                ShowOfs
+                0x00001350                DisplayInputBuf
+                0x000030c2                SetSweepParam
+                0x000011dc                CalWholePart
+                0x00003114                FreqKey
+                0x000019c8                SendSweep
+                0x00003150                SweepInit
+                0x00001d38                ShowFreqPeroid
+                0x0000112e                EscapeMode
+                0x0000162a                CalDeltaPhase
+                0x0000159c                SetOfs
+                0x000013c0                ToggleSign
+                0x00002310                PWInputHandle
+                0x0000245c                AmpInputHandle
+                0x000033a2                SVParamDefault
+                0x00002ade                ToggleTrigCtrl
+                0x000031dc                ServoPosInit
+                0x00002594                ShowServoAmp
+                0x00002c30                Dec
+                0x00001114                ExitSVParam
+                0x00003032                SetSweepAmp
+                0x00001fe4                ShowSVParam
+                0x00001330                ClearInputBuf
+                0x000017ca                ShowStep
+                0x00002e22                Inc
+                0x000015ec                SetFreqCW
+                0x0000142e                SetIncrement
+                0x000010e4                DoCmdProcessing
+                0x00001484                ShowMode
+                0x00003394                ChangeSVParam
+                0x0000114a                NumInputSetup
+                0x0000305a                QuickSweepParam
+                0x00003286                CAN
+                0x000024ba                AppInit
+                0x00001efc                LoadUserWaveform
+                0x000010b6                CmdAnalysis
+                0x00001530                ChangeMode
+                0x00003182                ServoRunInit
+                0x000016d0                PutFreq
+                0x0000124c                CalValue
+                0x000015c4                SetAmp
+                0x00002186                ServoParamInputHandle
+                0x000011c4                ClearDisp
+                0x00003326                SetSweepOfs
+                0x00001920                ShowServoRun
+                0x00001994                SendServoPos
+                0x0000119c                UnitButton
+                0x0000337c                SetSVParam
+                0x000021f2                ShowPW
+                0x00001566                ShowFocus
+                0x000016b2                FillDisp
+                0x000026da                ServoAmpInputHandle
+                0x0000153a                ShowType
+                0x00001728                DispWholeNum
+                0x00002346                SetPW
+                0x00003352                SelectMode
+                0x000032fa                SetSVAmp
+                0x00001d20                SetDuty
+                0x00002878                OfsInputHandle
+                0x00002932                CW_Init
+                0x00001696                PutStr_ROM
+ .text          0x000033d4      0x2ca Diag.o
+                0x00003552                OutputTestSignal
+                0x0000366a                DiagKeypad
+                0x0000367a                DiagDisplay
+                0x000033d4                DiagKeyCheck
+                0x000034ea                DiagEEPROM
+                0x0000341c                PutStr_ROM_coded
+                0x00003626                DiagDDS
+ .text          0x0000369e      0x4ea Comm.o
+                0x0000369e                u0RxBufInit
+                0x00003844                CommTx
+                0x00003796                IsFrame
+                0x0000381c                PutStr_ROM_coded1
+                0x00003a5c                CommRx
+                0x00003766                CommInit
+                0x00003748                IsUart0RxBufEmpty
+                0x00003884                CmdProc
+                0x000036fa                Uart0RxBufDelete
+                0x000036b4                Uart0RxBufAdd
+                0x000037ba                __vector_18
+ .text          0x00003b88       0x78 Zmon.o
+                0x00003b9e                RecvByte
+                0x00003bc4                SendByte
+                0x00003b88                Dly1us
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00003c00        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00003c00                . = ALIGN (0x2)
+ *(.text.*)
+ .text.avr-libc.fplib
+                0x00003c00        0x4 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x00003c00                __divsf3
+ .text.avr-libc.fplib
+                0x00003c04       0xcc c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x00003c1a                __divsf3x
+                0x00003c1e                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00003cd0        0xa c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                0x00003cd0                __fixsfsi
+ .text.avr-libc.fplib
+                0x00003cda       0x58 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00003cda                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00003d32       0x7a c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00003d36                __floatsisf
+                0x00003d32                __floatunsisf
+ .text.avr-libc.fplib
+                0x00003dac        0xc c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00003dac                __fp_inf
+ .text.avr-libc.fplib
+                0x00003db8        0x6 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00003db8                __fp_nan
+ .text.avr-libc.fplib
+                0x00003dbe        0xe c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00003dbe                __fp_pscA
+ .text.avr-libc.fplib
+                0x00003dcc        0xe c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00003dcc                __fp_pscB
+ .text.avr-libc.fplib
+                0x00003dda       0x22 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00003dda                __fp_round
+ .text.avr-libc.fplib
+                0x00003dfc       0x44 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00003dfc                __fp_split3
+                0x00003e0c                __fp_splitA
+ .text.avr-libc.fplib
+                0x00003e40        0xe c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00003e40                __fp_zero
+                0x00003e42                __fp_szero
+ .text.avr-libc.fplib
+                0x00003e4e        0x4 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x00003e4e                __mulsf3
+ .text.avr-libc.fplib
+                0x00003e52       0xc2 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00003e6a                __mulsf3_pse
+                0x00003e66                __mulsf3x
+ .text.libgcc   0x00003f14       0x3e c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00003f14                __mulsi3
+ .text.libgcc   0x00003f52       0x28 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00003f52                __udivmodhi4
+ .text.libgcc   0x00003f7a       0x44 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00003f7a                __udivmodsi4
+ .text.libgcc   0x00003fbe        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00003fbe        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00003fbe        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00003fbe                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00003fbe        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00003fbe                exit
+                0x00003fbe                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00003fbe        0x4 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00003fc2                _etext = .
+
+.data           0x00800100       0x24 load address 0x00003fc2
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+ .data          0x00800100        0x0 113-08512-014.o
+ .data          0x00800100       0x23 Board.o
+                0x00800100                DispBuf
+ .data          0x00800123        0x0 Common.o
+ .data          0x00800123        0x0 FuncGen.o
+ .data          0x00800123        0x0 Diag.o
+ .data          0x00800123        0x0 Comm.o
+ .data          0x00800123        0x0 Zmon.o
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800123        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800124                . = ALIGN (0x2)
+ *fill*         0x00800123        0x1 00
+                0x00800124                _edata = .
+                0x00800124                PROVIDE (__data_end, .)
+
+.bss            0x00800124      0x328
+                0x00800124                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+ .bss           0x00800124        0x0 113-08512-014.o
+ .bss           0x00800124        0x0 Board.o
+ .bss           0x00800124        0x0 Common.o
+ .bss           0x00800124        0x0 FuncGen.o
+ .bss           0x00800124        0x0 Diag.o
+ .bss           0x00800124        0x0 Comm.o
+ .bss           0x00800124        0x0 Zmon.o
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800124        0x0 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800124       0x2a Board.o
+                0x00800124                KScanBuf
+                0x00800126                KeyParam
+                0x00800127                Keycnt
+                0x00800128                KTimeChk
+                0x00800129                KeyCode
+                0x0080012a                enc_cnt
+                0x0080012b                KeyCodeBuf
+                0x0080012c                Keybuf
+                0x0080012d                KScan
+                0x0080012f                Keybuf0
+                0x00800130                GTimer
+                0x00800132                Keycode
+                0x00800133                Strbuf
+                0x00800147                KHCount
+                0x00800148                KFlags
+                0x00800149                KCount
+                0x0080014a                enc_state
+                0x0080014b                PrevWiperPos
+                0x0080014c                old_enc_cnt
+                0x0080014d                Flags
+ COMMON         0x0080014e       0x6d FuncGen.o
+                0x0080014e                InputBuf
+                0x0080015e                SysState
+                0x00800162                NumString
+                0x0080016a                NumInput
+                0x00800179                miniDDS
+                0x008001b7                CurrParam
+                0x008001b8                TrigCtrl
+                0x008001b9                CurrFocus
+                0x008001ba                CurrMode
+ COMMON         0x008001bb      0x291 Comm.o
+                0x008001bb                u0RxQueueTail
+                0x008001bd                Uart0RxBuf
+                0x008002e9                FrameBuf
+                0x00800415                CommStatus
+                0x00800416                RxCnt
+                0x00800418                Txbuf
+                0x0080044a                u0RxQueueHead
+                0x0080044c                PROVIDE (__bss_end, .)
+                0x00003fc2                __data_load_start = LOADADDR (.data)
+                0x00003fe6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080044c        0x0
+                0x0080044c                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080044c                PROVIDE (__noinit_end, .)
+                0x0080044c                _end = .
+                0x0080044c                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000       0x41
+ *(.eeprom*)
+ .eeprom        0x00810000       0x41 FuncGen.o
+                0x00810003                miniDDS_EE
+                0x00810001                Signature_EE2
+                0x00810002                EEversion
+                0x00810000                Signature_EE1
+                0x00810041                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x2f4
+ *(.stab)
+ .stab          0x00000000      0x2f4 Zmon.o
+
+.stabstr        0x00000000       0x36
+ *(.stabstr)
+ .stabstr       0x00000000       0x36 Zmon.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xc0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 113-08512-014.o
+ .debug_aranges
+                0x00000020       0x20 Board.o
+ .debug_aranges
+                0x00000040       0x20 Common.o
+ .debug_aranges
+                0x00000060       0x20 FuncGen.o
+ .debug_aranges
+                0x00000080       0x20 Diag.o
+ .debug_aranges
+                0x000000a0       0x20 Comm.o
+
+.debug_pubnames
+                0x00000000      0xdc9
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x60 113-08512-014.o
+ .debug_pubnames
+                0x00000060      0x29f Board.o
+ .debug_pubnames
+                0x000002ff       0x7f Common.o
+ .debug_pubnames
+                0x0000037e      0x7e9 FuncGen.o
+ .debug_pubnames
+                0x00000b67      0x11f Diag.o
+ .debug_pubnames
+                0x00000c86      0x143 Comm.o
+
+.debug_info     0x00000000     0x4306
+ *(.debug_info)
+ .debug_info    0x00000000      0x314 113-08512-014.o
+ .debug_info    0x00000314      0x861 Board.o
+ .debug_info    0x00000b75      0x302 Common.o
+ .debug_info    0x00000e77     0x262e FuncGen.o
+ .debug_info    0x000034a5      0x702 Diag.o
+ .debug_info    0x00003ba7      0x75f Comm.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xb1f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x11c 113-08512-014.o
+ .debug_abbrev  0x0000011c      0x213 Board.o
+ .debug_abbrev  0x0000032f      0x187 Common.o
+ .debug_abbrev  0x000004b6      0x2c5 FuncGen.o
+ .debug_abbrev  0x0000077b      0x185 Diag.o
+ .debug_abbrev  0x00000900      0x21f Comm.o
+
+.debug_line     0x00000000     0x33b7
+ *(.debug_line)
+ .debug_line    0x00000000      0x2a1 113-08512-014.o
+ .debug_line    0x000002a1      0x89e Board.o
+ .debug_line    0x00000b3f      0x27a Common.o
+ .debug_line    0x00000db9     0x1de6 FuncGen.o
+ .debug_line    0x00002b9f      0x375 Diag.o
+ .debug_line    0x00002f14      0x4a3 Comm.o
+
+.debug_frame    0x00000000      0x880
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 113-08512-014.o
+ .debug_frame   0x00000020      0x1b0 Board.o
+ .debug_frame   0x000001d0       0xa0 Common.o
+ .debug_frame   0x00000270      0x4d0 FuncGen.o
+ .debug_frame   0x00000740       0x80 Diag.o
+ .debug_frame   0x000007c0       0xc0 Comm.o
+
+.debug_str      0x00000000     0x1026
+ *(.debug_str)
+ .debug_str     0x00000000      0x1f5 113-08512-014.o
+                                0x249 (size before relaxing)
+ .debug_str     0x000001f5      0x2b4 Board.o
+                                0x3b6 (size before relaxing)
+ .debug_str     0x000004a9       0xd7 Common.o
+                                0x136 (size before relaxing)
+ .debug_str     0x00000580      0x8e1 FuncGen.o
+                                0xc8b (size before relaxing)
+ .debug_str     0x00000e61       0xd3 Diag.o
+                                0x4a2 (size before relaxing)
+ .debug_str     0x00000f34       0xf2 Comm.o
+                                0x4dd (size before relaxing)
+
+.debug_loc      0x00000000     0x1ad5
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x2b8 Board.o
+ .debug_loc     0x000002b8      0x2aa Common.o
+ .debug_loc     0x00000562     0x11ce FuncGen.o
+ .debug_loc     0x00001730      0x14e Diag.o
+ .debug_loc     0x0000187e      0x257 Comm.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(113-08512-014.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_Init                                          Board.o
+AmpInputHandle                                    FuncGen.o
+AppInit                                           FuncGen.o
+                                                  113-08512-014.o
+BinToDec32                                        Common.o
+                                                  FuncGen.o
+BinToStr                                          Common.o
+                                                  FuncGen.o
+CAN                                               FuncGen.o
+CRLF                                              113-08512-014.o
+CW_Init                                           FuncGen.o
+CalDeltaPhase                                     FuncGen.o
+CalValue                                          FuncGen.o
+CalWholePart                                      FuncGen.o
+ChangeMode                                        FuncGen.o
+ChangeSVParam                                     FuncGen.o
+ClearDisp                                         FuncGen.o
+                                                  Diag.o
+                                                  113-08512-014.o
+ClearInputBuf                                     FuncGen.o
+ClrDispBuf                                        Board.o
+                                                  Diag.o
+CmdAnalysis                                       FuncGen.o
+CmdIndex                                          FuncGen.o
+CmdProc                                           Comm.o
+CommInit                                          Comm.o
+                                                  113-08512-014.o
+CommRx                                            Comm.o
+                                                  113-08512-014.o
+CommStatus                                        Comm.o
+CommTx                                            Comm.o
+Comp_Init                                         Board.o
+CurrFocus                                         Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+CurrMode                                          Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+CurrParam                                         FuncGen.o
+DDSver                                            113-08512-014.o
+Dec                                               FuncGen.o
+Decor                                             113-08512-014.o
+Delay                                             Common.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+DelayDisp                                         Common.o
+                                                  113-08512-014.o
+Device                                            113-08512-014.o
+DiagDDS                                           Diag.o
+                                                  FuncGen.o
+DiagDisplay                                       Diag.o
+                                                  FuncGen.o
+DiagEEPROM                                        Diag.o
+                                                  FuncGen.o
+DiagKeyCheck                                      Diag.o
+                                                  FuncGen.o
+DiagKeypad                                        Diag.o
+                                                  FuncGen.o
+Digit                                             FuncGen.o
+DispBuf                                           Board.o
+                                                  Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+DispWholeNum                                      FuncGen.o
+DisplayInputBuf                                   FuncGen.o
+Dly1ms                                            Common.o
+Dly1us                                            Zmon.o
+                                                  Common.o
+                                                  Board.o
+Dly50us                                           Common.o
+                                                  Board.o
+Dly_ms                                            Common.o
+                                                  Board.o
+Dly_us                                            Common.o
+DoCmdProcessing                                   FuncGen.o
+                                                  113-08512-014.o
+Dummy                                             FuncGen.o
+DummyString1                                      Diag.o
+DummyString2                                      Diag.o
+DummyString3                                      Diag.o
+Duty                                              FuncGen.o
+DutyInputHandle                                   FuncGen.o
+EE_Read                                           Board.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+EE_Write                                          Board.o
+                                                  Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+EEversion                                         FuncGen.o
+EepromCheck                                       Diag.o
+EscapeMode                                        FuncGen.o
+ExitSVParam                                       FuncGen.o
+ExtIntr_Init                                      Board.o
+FWver                                             113-08512-014.o
+Failed                                            Diag.o
+FillDisp                                          FuncGen.o
+                                                  Diag.o
+                                                  113-08512-014.o
+FindDec                                           Common.o
+Flags                                             Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+                                                  113-08512-014.o
+FocusLocTab                                       FuncGen.o
+FrameBuf                                          Comm.o
+FreqInputHandle                                   FuncGen.o
+FreqKey                                           FuncGen.o
+FreqStep                                          FuncGen.o
+GTimer                                            Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+                                                  113-08512-014.o
+Good                                              Diag.o
+Inc                                               FuncGen.o
+IncInputHandle                                    FuncGen.o
+InitFuncTab                                       FuncGen.o
+InputBuf                                          FuncGen.o
+IsFrame                                           Comm.o
+IsUart0RxBufEmpty                                 Comm.o
+KCount                                            Board.o
+KFlags                                            FuncGen.o
+                                                  Board.o
+                                                  113-08512-014.o
+KHCount                                           Board.o
+KS_CW_Tab                                         FuncGen.o
+KS_DiagDDS_Tab                                    FuncGen.o
+KS_DiagEEPROM_Tab                                 FuncGen.o
+KS_DiagKey_Tab                                    FuncGen.o
+KS_DiagLCD_Tab                                    FuncGen.o
+KS_DigitInput_Tab                                 FuncGen.o
+KS_ModeSel_Tab                                    FuncGen.o
+KS_ServoParam_Tab                                 FuncGen.o
+KS_ServoPos_Tab                                   FuncGen.o
+KS_ServoRun_Tab                                   FuncGen.o
+KS_ShowDuty_Tab                                   FuncGen.o
+KS_ShowStep_Tab                                   FuncGen.o
+KS_Sweep_Tab                                      FuncGen.o
+KScan                                             Board.o
+KScanBuf                                          Board.o
+KScanCodeTab                                      Board.o
+KTimeChk                                          Board.o
+KeyCode                                           Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+                                                  113-08512-014.o
+KeyCodeBuf                                        Comm.o
+                                                  FuncGen.o
+                                                  Board.o
+KeyConvert                                        Board.o
+KeyParam                                          Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+KeyScan                                           Board.o
+                                                  113-08512-014.o
+Keybuf                                            Board.o
+Keybuf0                                           Board.o
+Keycnt                                            Board.o
+Keycode                                           Board.o
+LCD_Init                                          Board.o
+                                                  113-08512-014.o
+LCD_WriteByte                                     Board.o
+LoadUserWaveform                                  FuncGen.o
+MfgID                                             113-08512-014.o
+MfgID_coded                                       Diag.o
+MfgID_coded1                                      Comm.o
+                                                  113-08512-014.o
+Misc_Init                                         Board.o
+                                                  113-08512-014.o
+ModeIndex                                         FuncGen.o
+ModeNames                                         FuncGen.o
+ModePrompt                                        FuncGen.o
+NumInput                                          FuncGen.o
+NumInputSetup                                     FuncGen.o
+NumString                                         FuncGen.o
+OfsInputHandle                                    FuncGen.o
+OutputTestSignal                                  Diag.o
+                                                  113-08512-014.o
+PWInputHandle                                     FuncGen.o
+Port_Init                                         Board.o
+                                                  113-08512-014.o
+PrevWiperPos                                      FuncGen.o
+                                                  Board.o
+PutFreq                                           FuncGen.o
+PutStr_ROM                                        FuncGen.o
+                                                  Diag.o
+                                                  113-08512-014.o
+PutStr_ROM_coded                                  Diag.o
+                                                  FuncGen.o
+PutStr_ROM_coded1                                 Comm.o
+                                                  113-08512-014.o
+QuickSweepParam                                   FuncGen.o
+RecvByte                                          Zmon.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+RxCnt                                             Comm.o
+SVParamDefault                                    FuncGen.o
+SaveSetting                                       FuncGen.o
+SelectMode                                        FuncGen.o
+SendBuf                                           Board.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+SendByte                                          Zmon.o
+                                                  Board.o
+SendDDS                                           FuncGen.o
+                                                  Diag.o
+SendServoPos                                      FuncGen.o
+SendServoRun                                      FuncGen.o
+SendSweep                                         FuncGen.o
+ServoAmp                                          FuncGen.o
+ServoAmpInputHandle                               FuncGen.o
+ServoPW                                           FuncGen.o
+ServoParamDefaultRestore                          FuncGen.o
+ServoParamIndex                                   FuncGen.o
+ServoParamInputHandle                             FuncGen.o
+ServoParamNames                                   FuncGen.o
+ServoParamUnits                                   FuncGen.o
+ServoPos                                          FuncGen.o
+ServoPosInit                                      FuncGen.o
+ServoRun                                          FuncGen.o
+ServoRunInit                                      FuncGen.o
+ServoRunState                                     FuncGen.o
+SetAmp                                            FuncGen.o
+SetDigitalPot                                     Board.o
+                                                  Diag.o
+                                                  FuncGen.o
+SetDuty                                           FuncGen.o
+SetFreqCW                                         FuncGen.o
+SetFreqPeriodStep                                 FuncGen.o
+SetIncrement                                      FuncGen.o
+SetOfs                                            FuncGen.o
+SetPW                                             FuncGen.o
+SetSVAmp                                          FuncGen.o
+SetSVParam                                        FuncGen.o
+SetSweepAmp                                       FuncGen.o
+SetSweepOfs                                       FuncGen.o
+SetSweepParam                                     FuncGen.o
+ShowAmp                                           FuncGen.o
+ShowDuty                                          FuncGen.o
+ShowFocus                                         FuncGen.o
+                                                  Comm.o
+ShowFreqPeroid                                    FuncGen.o
+ShowMode                                          FuncGen.o
+ShowOfs                                           FuncGen.o
+ShowPW                                            FuncGen.o
+ShowSVParam                                       FuncGen.o
+ShowServoAmp                                      FuncGen.o
+ShowServoRun                                      FuncGen.o
+ShowStep                                          FuncGen.o
+ShowSweep                                         FuncGen.o
+ShowType                                          FuncGen.o
+Signature_EE1                                     FuncGen.o
+Signature_EE2                                     FuncGen.o
+StartStop                                         FuncGen.o
+Strbuf                                            Diag.o
+                                                  FuncGen.o
+                                                  Board.o
+                                                  113-08512-014.o
+SweepInit                                         FuncGen.o
+SweepParamInputHandle                             FuncGen.o
+SweepParamUnit                                    FuncGen.o
+SweepParams                                       FuncGen.o
+SysState                                          Comm.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+TYPE                                              FuncGen.o
+                                                  Comm.o
+TestSignal                                        Diag.o
+TestSignalParam                                   Diag.o
+TimeStep                                          FuncGen.o
+Timer0_Init                                       Board.o
+                                                  113-08512-014.o
+Timer2_Init                                       Board.o
+                                                  113-08512-014.o
+ToggleSign                                        FuncGen.o
+ToggleSweepDir                                    FuncGen.o
+ToggleTrigCtrl                                    FuncGen.o
+TrigCtrl                                          Diag.o
+                                                  FuncGen.o
+TswTitle                                          FuncGen.o
+Txbuf                                             Comm.o
+                                                  Diag.o
+Uart0RxBuf                                        Comm.o
+Uart0RxBufAdd                                     Comm.o
+Uart0RxBufDelete                                  Comm.o
+Uart0_Init                                        Board.o
+UnitButton                                        FuncGen.o
+Unit_Symbols                                      FuncGen.o
+UpdateLCD                                         Board.o
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  113-08512-014.o
+UpdateOfs                                         Board.o
+                                                  Diag.o
+                                                  FuncGen.o
+VREF_Init                                         Board.o
+WaveName                                          FuncGen.o
+Web                                               113-08512-014.o
+Web_coded                                         Diag.o
+Web_coded1                                        Comm.o
+                                                  113-08512-014.o
+__bad_interrupt                                   c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__bss_end                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__data_end                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__divsf3                                          c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                                                  FuncGen.o
+__divsf3_pse                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__divsf3x                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+__do_clear_bss                                    c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                                                  Comm.o
+                                                  FuncGen.o
+                                                  Board.o
+__do_copy_data                                    c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  Board.o
+__fixsfsi                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                                                  FuncGen.o
+__fixunssfsi                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                                                  FuncGen.o
+__floatsisf                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                                                  FuncGen.o
+__floatunsisf                                     c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                                                  FuncGen.o
+__fp_inf                                          c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_nan                                          c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_pscA                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_pscB                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_round                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+__fp_split3                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_splitA                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+__fp_szero                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+__fp_zero                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+__heap_end                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__init                                            c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__mulsf3                                          c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                                                  FuncGen.o
+__mulsf3_pse                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+__mulsf3x                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+__mulsi3                                          c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Common.o
+                                                  Board.o
+__stack                                           c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__udivmodhi4                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                                                  FuncGen.o
+__udivmodsi4                                      c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                                                  Diag.o
+                                                  FuncGen.o
+                                                  Common.o
+                                                  Board.o
+__vector_1                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_10                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_11                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_12                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_13                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_14                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_15                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_16                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_17                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_18                                       Comm.o
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_19                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_2                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_20                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_21                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_22                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_23                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_24                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_25                                       c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_3                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_4                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_5                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_6                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_7                                        Board.o
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_8                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_9                                        c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vector_default                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+__vectors                                         c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+_exit                                             c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+enc_cnt                                           Board.o
+enc_state                                         Board.o
+enc_table                                         Board.o
+exit                                              c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+main                                              113-08512-014.o
+                                                  c:/engineering/winavr20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm168.o
+miniDDS                                           Comm.o
+                                                  Diag.o
+                                                  FuncGen.o
+miniDDS_EE                                        FuncGen.o
+miniDDS_ROM                                       FuncGen.o
+old_enc_cnt                                       Board.o
+u0RxBufInit                                       Comm.o
+u0RxQueueHead                                     Comm.o
+u0RxQueueTail                                     Comm.o
+u0getc                                            Board.o
+u0putc                                            Board.o
+                                                  Comm.o
+                                                  FuncGen.o
+u0rcheck                                          Board.o
+uputs                                             Board.o
+uputs_ROM                                         Board.o
+                                                  113-08512-014.o

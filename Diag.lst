@@ -1,0 +1,745 @@
+   1               		.file	"Diag.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	DiagKeyCheck
+  18               	DiagKeyCheck:
+  19               	.LFB4:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 E091 0000 		lds r30,KeyCode
+  25 0004 E631      		cpi r30,lo8(22)
+  26 0006 00F4      		brsh .L2
+  27               	.LM3:
+  28 0008 F0E0      		ldi r31,lo8(0)
+  29 000a 8091 0000 		lds r24,KeyParam
+  30 000e E050      		subi r30,lo8(-(DispBuf-1))
+  31 0010 F040      		sbci r31,hi8(-(DispBuf-1))
+  32 0012 8083      		st Z,r24
+  33 0014 00C0      		rjmp .L3
+  34               	.L2:
+  35               	.LM4:
+  36 0016 E631      		cpi r30,lo8(22)
+  37 0018 01F4      		brne .L4
+  38               	.LM5:
+  39 001a 83E4      		ldi r24,lo8(67)
+  40 001c 8093 0000 		sts DispBuf+22,r24
+  41               	.LM6:
+  42 0020 87E5      		ldi r24,lo8(87)
+  43 0022 8093 0000 		sts DispBuf+23,r24
+  44 0026 00C0      		rjmp .L3
+  45               	.L4:
+  46               	.LM7:
+  47 0028 E731      		cpi r30,lo8(23)
+  48 002a 01F4      		brne .L3
+  49               	.LM8:
+  50 002c 83E4      		ldi r24,lo8(67)
+  51 002e 8093 0000 		sts DispBuf+25,r24
+  52               	.LM9:
+  53 0032 8093 0000 		sts DispBuf+26,r24
+  54               	.LM10:
+  55 0036 87E5      		ldi r24,lo8(87)
+  56 0038 8093 0000 		sts DispBuf+27,r24
+  57               	.L3:
+  58               	.LM11:
+  59 003c 8091 0000 		lds r24,Flags
+  60 0040 8068      		ori r24,lo8(-128)
+  61 0042 8093 0000 		sts Flags,r24
+  62               	/* epilogue start */
+  63               	.LM12:
+  64 0046 0895      		ret
+  65               	.LFE4:
+  67               	.global	PutStr_ROM_coded
+  69               	PutStr_ROM_coded:
+  70               	.LFB8:
+  71               	.LM13:
+  72 0048 1F93      		push r17
+  73               	/* prologue: function */
+  74               	/* frame size = 0 */
+  75               	.LM14:
+  76 004a 8091 0000 		lds r24,DispBuf+34
+  77 004e 8823      		tst r24
+  78 0050 01F4      		brne .+2
+  79 0052 00C0      		rjmp .L15
+  80               	.LM15:
+  81 0054 8FE7      		ldi r24,lo8(127)
+  82 0056 90E0      		ldi r25,hi8(127)
+  83 0058 0E94 0000 		call EE_Read
+  84               	.LM16:
+  85 005c 182F      		mov r17,r24
+  86               	.LVL0:
+  87 005e 1150      		subi r17,lo8(-(-1))
+  88               	.LM17:
+  89 0060 8FE7      		ldi r24,lo8(127)
+  90 0062 90E0      		ldi r25,hi8(127)
+  91 0064 612F      		mov r22,r17
+  92 0066 0E94 0000 		call EE_Write
+  93               	.LM18:
+  94 006a 1123      		tst r17
+  95 006c 01F0      		breq .+2
+  96 006e 00C0      		rjmp .L15
+  97               	.LM19:
+  98 0070 8FE7      		ldi r24,lo8(127)
+  99 0072 90E0      		ldi r25,hi8(127)
+ 100 0074 60E0      		ldi r22,lo8(0)
+ 101 0076 0E94 0000 		call EE_Write
+ 102 007a A0E0      		ldi r26,lo8(Txbuf)
+ 103 007c B0E0      		ldi r27,hi8(Txbuf)
+ 104               	.LVL1:
+ 105 007e 20E0      		ldi r18,lo8(0)
+ 106 0080 30E0      		ldi r19,hi8(0)
+ 107               	.L8:
+ 108               	.LM20:
+ 109 0082 F901      		movw r30,r18
+ 110 0084 E050      		subi r30,lo8(-(DispBuf))
+ 111 0086 F040      		sbci r31,hi8(-(DispBuf))
+ 112 0088 8081      		ld r24,Z
+ 113 008a 8D93      		st X+,r24
+ 114 008c 2F5F      		subi r18,lo8(-(1))
+ 115 008e 3F4F      		sbci r19,hi8(-(1))
+ 116               	.LM21:
+ 117 0090 80E0      		ldi r24,hi8(Txbuf+32)
+ 118 0092 A030      		cpi r26,lo8(Txbuf+32)
+ 119 0094 B807      		cpc r27,r24
+ 120 0096 01F4      		brne .L8
+ 121               	.LM22:
+ 122 0098 80E0      		ldi r24,lo8(0)
+ 123 009a 60E2      		ldi r22,lo8(32)
+ 124 009c 40E2      		ldi r20,lo8(32)
+ 125 009e 0E94 0000 		call FillDisp
+ 126               	.LVL2:
+ 127 00a2 80E0      		ldi r24,lo8(0)
+ 128 00a4 90E0      		ldi r25,hi8(0)
+ 129 00a6 00C0      		rjmp .L9
+ 130               	.LVL3:
+ 131               	.L10:
+ 132               	.LM23:
+ 133 00a8 FC01      		movw r30,r24
+ 134 00aa E050      		subi r30,lo8(-(DispBuf-1))
+ 135 00ac F040      		sbci r31,hi8(-(DispBuf-1))
+ 136 00ae 2095      		com r18
+ 137 00b0 2083      		st Z,r18
+ 138               	.L9:
+ 139 00b2 AC01      		movw r20,r24
+ 140 00b4 4050      		subi r20,lo8(-(DispBuf))
+ 141 00b6 5040      		sbci r21,hi8(-(DispBuf))
+ 142               	.LBB2:
+ 143               	.LM24:
+ 144 00b8 FC01      		movw r30,r24
+ 145 00ba E050      		subi r30,lo8(-(MfgID_coded))
+ 146 00bc F040      		sbci r31,hi8(-(MfgID_coded))
+ 147               	/* #APP */
+ 148               	 ;  288 "Diag.c" 1
+ 149 00be 2491      		lpm r18, Z
+ 150               		
+ 151               	 ;  0 "" 2
+ 152               	/* #NOAPP */
+ 153 00c0 0196      		adiw r24,1
+ 154               	.LBE2:
+ 155 00c2 2223      		tst r18
+ 156 00c4 01F4      		brne .L10
+ 157 00c6 DA01      		movw r26,r20
+ 158 00c8 80E0      		ldi r24,lo8(Web_coded)
+ 159 00ca 90E0      		ldi r25,hi8(Web_coded)
+ 160               	.LVL4:
+ 161 00cc 00C0      		rjmp .L11
+ 162               	.LVL5:
+ 163               	.L12:
+ 164               	.LM25:
+ 165 00ce 2095      		com r18
+ 166 00d0 1796      		adiw r26,7
+ 167 00d2 2C93      		st X,r18
+ 168 00d4 1797      		sbiw r26,7
+ 169               	.LVL6:
+ 170               	.L11:
+ 171 00d6 FC01      		movw r30,r24
+ 172               	.LBB3:
+ 173               	.LM26:
+ 174 00d8 0196      		adiw r24,1
+ 175               	/* #APP */
+ 176               	 ;  295 "Diag.c" 1
+ 177 00da 2491      		lpm r18, Z
+ 178               		
+ 179               	 ;  0 "" 2
+ 180               	.LVL7:
+ 181               	/* #NOAPP */
+ 182 00dc 1196      		adiw r26,1
+ 183               	.LBE3:
+ 184 00de 2223      		tst r18
+ 185 00e0 01F4      		brne .L12
+ 186               	.LM27:
+ 187 00e2 0E94 0000 		call UpdateLCD
+ 188               	.LVL8:
+ 189 00e6 12E3      		ldi r17,lo8(50)
+ 190               	.LVL9:
+ 191               	.L13:
+ 192               	.LM28:
+ 193 00e8 80E6      		ldi r24,lo8(-5536)
+ 194 00ea 9AEE      		ldi r25,hi8(-5536)
+ 195 00ec 0E94 0000 		call Delay
+ 196               	.LM29:
+ 197 00f0 1150      		subi r17,lo8(-(-1))
+ 198               	.LM30:
+ 199 00f2 01F4      		brne .L13
+ 200 00f4 A0E0      		ldi r26,lo8(Txbuf)
+ 201 00f6 B0E0      		ldi r27,hi8(Txbuf)
+ 202               	.LVL10:
+ 203 00f8 20E0      		ldi r18,lo8(0)
+ 204 00fa 30E0      		ldi r19,hi8(0)
+ 205               	.L14:
+ 206               	.LM31:
+ 207 00fc F901      		movw r30,r18
+ 208 00fe E050      		subi r30,lo8(-(DispBuf))
+ 209 0100 F040      		sbci r31,hi8(-(DispBuf))
+ 210 0102 8D91      		ld r24,X+
+ 211 0104 8083      		st Z,r24
+ 212 0106 2F5F      		subi r18,lo8(-(1))
+ 213 0108 3F4F      		sbci r19,hi8(-(1))
+ 214               	.LM32:
+ 215 010a 80E0      		ldi r24,hi8(Txbuf+32)
+ 216 010c A030      		cpi r26,lo8(Txbuf+32)
+ 217 010e B807      		cpc r27,r24
+ 218 0110 01F4      		brne .L14
+ 219               	.L15:
+ 220               	/* epilogue start */
+ 221               	.LM33:
+ 222 0112 1F91      		pop r17
+ 223               	.LVL11:
+ 224 0114 0895      		ret
+ 225               	.LFE8:
+ 227               	.global	DiagEEPROM
+ 229               	DiagEEPROM:
+ 230               	.LFB6:
+ 231               	.LM34:
+ 232               	/* prologue: function */
+ 233               	/* frame size = 0 */
+ 234               	.LM35:
+ 235 0116 0E94 0000 		call ClearDisp
+ 236               	.LM36:
+ 237 011a 80E0      		ldi r24,lo8(0)
+ 238 011c 60E0      		ldi r22,lo8(EepromCheck)
+ 239 011e 70E0      		ldi r23,hi8(EepromCheck)
+ 240 0120 0E94 0000 		call PutStr_ROM
+ 241               	.LM37:
+ 242 0124 84E7      		ldi r24,lo8(116)
+ 243 0126 0E94 0000 		call UpdateLCD
+ 244               	.LM38:
+ 245 012a 89E0      		ldi r24,lo8(9)
+ 246 012c 8093 0000 		sts Strbuf,r24
+ 247               	.LM39:
+ 248 0130 80E0      		ldi r24,lo8(Strbuf)
+ 249 0132 90E0      		ldi r25,hi8(Strbuf)
+ 250 0134 0E94 0000 		call SendBuf
+ 251               	.LM40:
+ 252 0138 80E4      		ldi r24,lo8(-25536)
+ 253 013a 9CE9      		ldi r25,hi8(-25536)
+ 254 013c 9093 0000 		sts (GTimer)+1,r25
+ 255 0140 8093 0000 		sts GTimer,r24
+ 256 0144 00C0      		rjmp .L20
+ 257               	.L23:
+ 258               	.LM41:
+ 259 0146 4A99      		sbic 41-32,2
+ 260 0148 00C0      		rjmp .L20
+ 261               	.LM42:
+ 262 014a 0E94 0000 		call RecvByte
+ 263               	.LM43:
+ 264 014e 8D33      		cpi r24,lo8(61)
+ 265 0150 01F4      		brne .L21
+ 266 0152 00C0      		rjmp .L29
+ 267               	.L20:
+ 268               	.LM44:
+ 269 0154 8091 0000 		lds r24,GTimer
+ 270 0158 9091 0000 		lds r25,(GTimer)+1
+ 271 015c 892B      		or r24,r25
+ 272 015e 01F4      		brne .L23
+ 273               	.L21:
+ 274               	.LM45:
+ 275 0160 80E1      		ldi r24,lo8(16)
+ 276 0162 60E0      		ldi r22,lo8(Failed)
+ 277 0164 70E0      		ldi r23,hi8(Failed)
+ 278               	.L28:
+ 279 0166 0E94 0000 		call PutStr_ROM
+ 280               	.LM46:
+ 281 016a 8091 0000 		lds r24,Flags
+ 282 016e 8068      		ori r24,lo8(-128)
+ 283 0170 8093 0000 		sts Flags,r24
+ 284               	/* epilogue start */
+ 285               	.LM47:
+ 286 0174 0895      		ret
+ 287               	.L29:
+ 288               	.LM48:
+ 289 0176 80E1      		ldi r24,lo8(16)
+ 290 0178 60E0      		ldi r22,lo8(Good)
+ 291 017a 70E0      		ldi r23,hi8(Good)
+ 292 017c 00C0      		rjmp .L28
+ 293               	.LFE6:
+ 295               	.global	OutputTestSignal
+ 297               	OutputTestSignal:
+ 298               	.LFB5:
+ 299               	.LM49:
+ 300 017e 1F93      		push r17
+ 301               	/* prologue: function */
+ 302               	/* frame size = 0 */
+ 303               	.LM50:
+ 304 0180 8EE3      		ldi r24,lo8(62)
+ 305 0182 8093 0000 		sts TrigCtrl,r24
+ 306               	.LBB4:
+ 307               	.LM51:
+ 308 0186 8091 0000 		lds r24,CurrFocus
+ 309 018a 1CE0      		ldi r17,lo8(12)
+ 310 018c 819F      		mul r24,r17
+ 311 018e F001      		movw r30,r0
+ 312 0190 1124      		clr r1
+ 313               	.LVL12:
+ 314 0192 E050      		subi r30,lo8(-(TestSignalParam))
+ 315 0194 F040      		sbci r31,hi8(-(TestSignalParam))
+ 316               	/* #APP */
+ 317               	 ;  124 "Diag.c" 1
+ 318 0196 8591      		lpm r24, Z+
+ 319 0198 9591      		lpm r25, Z+
+ 320 019a A591      		lpm r26, Z+
+ 321 019c B491      		lpm r27, Z
+ 322               		
+ 323               	 ;  0 "" 2
+ 324               	.LVL13:
+ 325               	/* #NOAPP */
+ 326               	.LBE4:
+ 327 019e 8093 0000 		sts miniDDS+1,r24
+ 328 01a2 9093 0000 		sts (miniDDS+1)+1,r25
+ 329 01a6 A093 0000 		sts (miniDDS+1)+2,r26
+ 330 01aa B093 0000 		sts (miniDDS+1)+3,r27
+ 331               	.LM52:
+ 332 01ae 1092 0000 		sts miniDDS+5,__zero_reg__
+ 333               	.LM53:
+ 334 01b2 0E94 0000 		call SendDDS
+ 335               	.LVL14:
+ 336               	.LBB5:
+ 337               	.LM54:
+ 338 01b6 9091 0000 		lds r25,CurrFocus
+ 339 01ba 83E0      		ldi r24,lo8(3)
+ 340 01bc 989F      		mul r25,r24
+ 341 01be F001      		movw r30,r0
+ 342 01c0 1124      		clr r1
+ 343               	.LVL15:
+ 344 01c2 EE0F      		lsl r30
+ 345 01c4 FF1F      		rol r31
+ 346 01c6 EE0F      		lsl r30
+ 347 01c8 FF1F      		rol r31
+ 348 01ca E050      		subi r30,lo8(-(TestSignalParam+4))
+ 349 01cc F040      		sbci r31,hi8(-(TestSignalParam+4))
+ 350               	/* #APP */
+ 351               	 ;  129 "Diag.c" 1
+ 352 01ce 6591      		lpm r22, Z+
+ 353 01d0 7591      		lpm r23, Z+
+ 354 01d2 8591      		lpm r24, Z+
+ 355 01d4 9491      		lpm r25, Z
+ 356               		
+ 357               	 ;  0 "" 2
+ 358               	.LVL16:
+ 359               	/* #NOAPP */
+ 360               	.LBE5:
+ 361               	.LM55:
+ 362 01d6 24E6      		ldi r18,lo8(100)
+ 363 01d8 30E0      		ldi r19,hi8(100)
+ 364 01da 40E0      		ldi r20,hlo8(100)
+ 365 01dc 50E0      		ldi r21,hhi8(100)
+ 366 01de 0E94 0000 		call __mulsi3
+ 367               	.LVL17:
+ 368 01e2 20E1      		ldi r18,lo8(10000)
+ 369 01e4 37E2      		ldi r19,hi8(10000)
+ 370 01e6 40E0      		ldi r20,hlo8(10000)
+ 371 01e8 50E0      		ldi r21,hhi8(10000)
+ 372 01ea 0E94 0000 		call __udivmodsi4
+ 373 01ee 822F      		mov r24,r18
+ 374 01f0 0E94 0000 		call SetDigitalPot
+ 375               	.LBB6:
+ 376               	.LM56:
+ 377 01f4 8091 0000 		lds r24,CurrFocus
+ 378 01f8 819F      		mul r24,r17
+ 379 01fa F001      		movw r30,r0
+ 380 01fc 1124      		clr r1
+ 381               	.LVL18:
+ 382 01fe E050      		subi r30,lo8(-(TestSignalParam+8))
+ 383 0200 F040      		sbci r31,hi8(-(TestSignalParam+8))
+ 384               	/* #APP */
+ 385               	 ;  133 "Diag.c" 1
+ 386 0202 6591      		lpm r22, Z+
+ 387 0204 7591      		lpm r23, Z+
+ 388 0206 8591      		lpm r24, Z+
+ 389 0208 9491      		lpm r25, Z
+ 390               		
+ 391               	 ;  0 "" 2
+ 392               	.LVL19:
+ 393               	/* #NOAPP */
+ 394               	.LBE6:
+ 395               	.LM57:
+ 396 020a 0E94 0000 		call UpdateOfs
+ 397               	.LVL20:
+ 398               	.LM58:
+ 399 020e 0E94 0000 		call ClearDisp
+ 400               	.LM59:
+ 401 0212 8091 0000 		lds r24,CurrFocus
+ 402 0216 8063      		ori r24,lo8(48)
+ 403 0218 8093 0000 		sts DispBuf,r24
+ 404               	.LM60:
+ 405 021c 8091 0000 		lds r24,CurrMode
+ 406 0220 8823      		tst r24
+ 407 0222 01F4      		brne .L31
+ 408               	.LM61:
+ 409 0224 8CE0      		ldi r24,lo8(12)
+ 410 0226 60E0      		ldi r22,lo8(DummyString3)
+ 411 0228 70E0      		ldi r23,hi8(DummyString3)
+ 412 022a 0E94 0000 		call PutStr_ROM
+ 413               	.L31:
+ 414               	.LM62:
+ 415 022e 6091 0000 		lds r22,CurrFocus
+ 416 0232 81E1      		ldi r24,lo8(17)
+ 417 0234 689F      		mul r22,r24
+ 418 0236 B001      		movw r22,r0
+ 419 0238 1124      		clr r1
+ 420 023a 6050      		subi r22,lo8(-(TestSignal))
+ 421 023c 7040      		sbci r23,hi8(-(TestSignal))
+ 422 023e 80E1      		ldi r24,lo8(16)
+ 423 0240 0E94 0000 		call PutStr_ROM
+ 424               	.LM63:
+ 425 0244 8091 0000 		lds r24,Flags
+ 426 0248 8068      		ori r24,lo8(-128)
+ 427 024a 8093 0000 		sts Flags,r24
+ 428               	/* epilogue start */
+ 429               	.LM64:
+ 430 024e 1F91      		pop r17
+ 431 0250 0895      		ret
+ 432               	.LFE5:
+ 434               	.global	DiagDDS
+ 436               	DiagDDS:
+ 437               	.LFB7:
+ 438               	.LM65:
+ 439               	/* prologue: function */
+ 440               	/* frame size = 0 */
+ 441               	.LM66:
+ 442 0252 9091 0000 		lds r25,KeyParam
+ 443 0256 9534      		cpi r25,lo8(69)
+ 444 0258 01F0      		breq .L34
+ 445 025a 9033      		cpi r25,lo8(48)
+ 446 025c 01F4      		brne .L35
+ 447               	.L34:
+ 448               	.LM67:
+ 449 025e 81E0      		ldi r24,lo8(1)
+ 450 0260 8093 0000 		sts CurrMode,r24
+ 451               	.LM68:
+ 452 0264 1092 0000 		sts CurrFocus,__zero_reg__
+ 453 0268 00C0      		rjmp .L36
+ 454               	.L35:
+ 455               	.LM69:
+ 456 026a 9933      		cpi r25,lo8(57)
+ 457 026c 01F4      		brne .L37
+ 458               	.LM70:
+ 459 026e 1092 0000 		sts CurrMode,__zero_reg__
+ 460               	.LM71:
+ 461 0272 1092 0000 		sts CurrFocus,__zero_reg__
+ 462               	.LM72:
+ 463 0276 80E5      		ldi r24,lo8(-15536)
+ 464 0278 93EC      		ldi r25,hi8(-15536)
+ 465 027a 9093 0000 		sts (GTimer)+1,r25
+ 466 027e 8093 0000 		sts GTimer,r24
+ 467 0282 00C0      		rjmp .L36
+ 468               	.L37:
+ 469               	.LM73:
+ 470 0284 81E0      		ldi r24,lo8(1)
+ 471 0286 8093 0000 		sts CurrMode,r24
+ 472               	.LM74:
+ 473 028a 9F70      		andi r25,lo8(15)
+ 474 028c 9093 0000 		sts CurrFocus,r25
+ 475               	.L36:
+ 476               	.LM75:
+ 477 0290 0E94 0000 		call OutputTestSignal
+ 478               	/* epilogue start */
+ 479               	.LM76:
+ 480 0294 0895      		ret
+ 481               	.LFE7:
+ 483               	.global	DiagKeypad
+ 485               	DiagKeypad:
+ 486               	.LFB3:
+ 487               	.LM77:
+ 488               	/* prologue: function */
+ 489               	/* frame size = 0 */
+ 490               	.LM78:
+ 491 0296 0E94 0000 		call ClrDispBuf
+ 492               	.LM79:
+ 493 029a 8091 0000 		lds r24,Flags
+ 494 029e 8068      		ori r24,lo8(-128)
+ 495 02a0 8093 0000 		sts Flags,r24
+ 496               	/* epilogue start */
+ 497               	.LM80:
+ 498 02a4 0895      		ret
+ 499               	.LFE3:
+ 501               	.global	DiagDisplay
+ 503               	DiagDisplay:
+ 504               	.LFB2:
+ 505               	.LM81:
+ 506               	/* prologue: function */
+ 507               	/* frame size = 0 */
+ 508               	.LM82:
+ 509 02a6 0E94 0000 		call ClrDispBuf
+ 510               	.LM83:
+ 511 02aa 80E0      		ldi r24,lo8(0)
+ 512 02ac 60E0      		ldi r22,lo8(DummyString1)
+ 513 02ae 70E0      		ldi r23,hi8(DummyString1)
+ 514 02b0 0E94 0000 		call PutStr_ROM
+ 515               	.LM84:
+ 516 02b4 80E1      		ldi r24,lo8(16)
+ 517 02b6 60E0      		ldi r22,lo8(DummyString2)
+ 518 02b8 70E0      		ldi r23,hi8(DummyString2)
+ 519 02ba 0E94 0000 		call PutStr_ROM
+ 520               	.LM85:
+ 521 02be 8091 0000 		lds r24,Flags
+ 522 02c2 8068      		ori r24,lo8(-128)
+ 523 02c4 8093 0000 		sts Flags,r24
+ 524               	/* epilogue start */
+ 525               	.LM86:
+ 526 02c8 0895      		ret
+ 527               	.LFE2:
+ 529               	.global	DummyString1
+ 530               		.section	.progmem.data,"a",@progbits
+ 533               	DummyString1:
+ 534 0000 3031 3233 		.ascii	"0123456789ABCDEF"
+ 534      3435 3637 
+ 534      3839 4142 
+ 534      4344 4546 
+ 535               	.global	DummyString2
+ 538               	DummyString2:
+ 539 0010 5B45 5343 		.string	"[ESC] to exit"
+ 539      5D20 746F 
+ 539      2065 7869 
+ 539      7400 
+ 540 001e 0000      		.skip 2,0
+ 541               	.global	DummyString3
+ 544               	DummyString3:
+ 545 0020 4155 544F 		.string	"AUTO"
+ 545      00
+ 546               	.global	EepromCheck
+ 549               	EepromCheck:
+ 550 0025 4444 5320 		.string	"DDS EEPROM Test"
+ 550      4545 5052 
+ 550      4F4D 2054 
+ 550      6573 7400 
+ 551               	.global	Good
+ 554               	Good:
+ 555 0035 476F 6F64 		.string	"Good"
+ 555      00
+ 556               	.global	Failed
+ 559               	Failed:
+ 560 003a 4661 696C 		.string	"Failed"
+ 560      6564 00
+ 561               	.global	TestSignal
+ 564               	TestSignal:
+ 565 0041 314B 487A 		.string	"1KHz     5V   0V"
+ 565      2020 2020 
+ 565      2035 5620 
+ 565      2020 3056 
+ 565      00
+ 566 0052 314B 487A 		.string	"1KHz    10V   0V"
+ 566      2020 2020 
+ 566      3130 5620 
+ 566      2020 3056 
+ 566      00
+ 567 0063 314B 487A 		.string	"1KHz    10V   5V"
+ 567      2020 2020 
+ 567      3130 5620 
+ 567      2020 3556 
+ 567      00
+ 568 0074 314B 487A 		.string	"1KHz    10V  -5V"
+ 568      2020 2020 
+ 568      3130 5620 
+ 568      202D 3556 
+ 568      00
+ 569 0085 3130 4B48 		.string	"10KHz    5V   0V"
+ 569      7A20 2020 
+ 569      2035 5620 
+ 569      2020 3056 
+ 569      00
+ 570 0096 3130 304B 		.string	"100KHz   5V   0V"
+ 570      487A 2020 
+ 570      2035 5620 
+ 570      2020 3056 
+ 570      00
+ 571 00a7 3230 304B 		.string	"200KHz   5V   0V"
+ 571      487A 2020 
+ 571      2035 5620 
+ 571      2020 3056 
+ 571      00
+ 572               	.global	TestSignalParam
+ 575               	TestSignalParam:
+ 576 00b8 E8        		.byte	-24
+ 577 00b9 03        		.byte	3
+ 578 00ba 00        		.byte	0
+ 579 00bb 00        		.byte	0
+ 580 00bc 88        		.byte	-120
+ 581 00bd 13        		.byte	19
+ 582 00be 00        		.byte	0
+ 583 00bf 00        		.byte	0
+ 584 00c0 88        		.byte	-120
+ 585 00c1 13        		.byte	19
+ 586 00c2 00        		.byte	0
+ 587 00c3 00        		.byte	0
+ 588 00c4 E8        		.byte	-24
+ 589 00c5 03        		.byte	3
+ 590 00c6 00        		.byte	0
+ 591 00c7 00        		.byte	0
+ 592 00c8 10        		.byte	16
+ 593 00c9 27        		.byte	39
+ 594 00ca 00        		.byte	0
+ 595 00cb 00        		.byte	0
+ 596 00cc 88        		.byte	-120
+ 597 00cd 13        		.byte	19
+ 598 00ce 00        		.byte	0
+ 599 00cf 00        		.byte	0
+ 600 00d0 E8        		.byte	-24
+ 601 00d1 03        		.byte	3
+ 602 00d2 00        		.byte	0
+ 603 00d3 00        		.byte	0
+ 604 00d4 10        		.byte	16
+ 605 00d5 27        		.byte	39
+ 606 00d6 00        		.byte	0
+ 607 00d7 00        		.byte	0
+ 608 00d8 10        		.byte	16
+ 609 00d9 27        		.byte	39
+ 610 00da 00        		.byte	0
+ 611 00db 00        		.byte	0
+ 612 00dc E8        		.byte	-24
+ 613 00dd 03        		.byte	3
+ 614 00de 00        		.byte	0
+ 615 00df 00        		.byte	0
+ 616 00e0 10        		.byte	16
+ 617 00e1 27        		.byte	39
+ 618 00e2 00        		.byte	0
+ 619 00e3 00        		.byte	0
+ 620 00e4 00        		.byte	0
+ 621 00e5 00        		.byte	0
+ 622 00e6 00        		.byte	0
+ 623 00e7 00        		.byte	0
+ 624 00e8 10        		.byte	16
+ 625 00e9 27        		.byte	39
+ 626 00ea 00        		.byte	0
+ 627 00eb 00        		.byte	0
+ 628 00ec 88        		.byte	-120
+ 629 00ed 13        		.byte	19
+ 630 00ee 00        		.byte	0
+ 631 00ef 00        		.byte	0
+ 632 00f0 88        		.byte	-120
+ 633 00f1 13        		.byte	19
+ 634 00f2 00        		.byte	0
+ 635 00f3 00        		.byte	0
+ 636 00f4 A0        		.byte	-96
+ 637 00f5 86        		.byte	-122
+ 638 00f6 01        		.byte	1
+ 639 00f7 00        		.byte	0
+ 640 00f8 88        		.byte	-120
+ 641 00f9 13        		.byte	19
+ 642 00fa 00        		.byte	0
+ 643 00fb 00        		.byte	0
+ 644 00fc 88        		.byte	-120
+ 645 00fd 13        		.byte	19
+ 646 00fe 00        		.byte	0
+ 647 00ff 00        		.byte	0
+ 648 0100 40        		.byte	64
+ 649 0101 0D        		.byte	13
+ 650 0102 03        		.byte	3
+ 651 0103 00        		.byte	0
+ 652 0104 88        		.byte	-120
+ 653 0105 13        		.byte	19
+ 654 0106 00        		.byte	0
+ 655 0107 00        		.byte	0
+ 656 0108 88        		.byte	-120
+ 657 0109 13        		.byte	19
+ 658 010a 00        		.byte	0
+ 659 010b 00        		.byte	0
+ 660               	.global	MfgID_coded
+ 663               	MfgID_coded:
+ 664 010c B5        		.byte	-75
+ 665 010d A6        		.byte	-90
+ 666 010e BA        		.byte	-70
+ 667 010f DF        		.byte	-33
+ 668 0110 AB        		.byte	-85
+ 669 0111 9A        		.byte	-102
+ 670 0112 9C        		.byte	-100
+ 671 0113 97        		.byte	-105
+ 672 0114 00        		.byte	0
+ 673               	.global	Web_coded
+ 676               	Web_coded:
+ 677 0115 88        		.byte	-120
+ 678 0116 88        		.byte	-120
+ 679 0117 88        		.byte	-120
+ 680 0118 D1        		.byte	-47
+ 681 0119 95        		.byte	-107
+ 682 011a 86        		.byte	-122
+ 683 011b 9A        		.byte	-102
+ 684 011c 8B        		.byte	-117
+ 685 011d 9A        		.byte	-102
+ 686 011e 9C        		.byte	-100
+ 687 011f 97        		.byte	-105
+ 688 0120 D1        		.byte	-47
+ 689 0121 9C        		.byte	-100
+ 690 0122 90        		.byte	-112
+ 691 0123 92        		.byte	-110
+ 692 0124 00        		.byte	0
+ 765               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Diag.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:18     .text:00000000 DiagKeyCheck
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:69     .text:00000048 PutStr_ROM_coded
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:663    .progmem.data:0000010c MfgID_coded
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:676    .progmem.data:00000115 Web_coded
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:229    .text:00000116 DiagEEPROM
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:549    .progmem.data:00000025 EepromCheck
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:559    .progmem.data:0000003a Failed
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:554    .progmem.data:00000035 Good
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:297    .text:0000017e OutputTestSignal
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:575    .progmem.data:000000b8 TestSignalParam
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:544    .progmem.data:00000020 DummyString3
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:564    .progmem.data:00000041 TestSignal
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:436    .text:00000252 DiagDDS
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:485    .text:00000296 DiagKeypad
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:503    .text:000002a6 DiagDisplay
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:533    .progmem.data:00000000 DummyString1
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cci42J3D.s:538    .progmem.data:00000010 DummyString2
+
+UNDEFINED SYMBOLS
+KeyCode
+KeyParam
+DispBuf
+Flags
+EE_Read
+EE_Write
+Txbuf
+FillDisp
+UpdateLCD
+Delay
+ClearDisp
+PutStr_ROM
+Strbuf
+SendBuf
+GTimer
+RecvByte
+TrigCtrl
+CurrFocus
+miniDDS
+SendDDS
+__mulsi3
+__udivmodsi4
+SetDigitalPot
+UpdateOfs
+CurrMode
+ClrDispBuf
